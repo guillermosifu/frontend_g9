@@ -46,3 +46,26 @@ console.log("creanado un nuevo elemento", alumnos)
 //.length retorna un number
 
 console.log("ultimo elemento de mi array", alumnos[8])
+
+// practca creae dos arrays 1 de personas y otro de cosas de oficina
+
+const personas=[
+    "maggue",
+    "bruno",
+    "thanos",
+    "luna",
+    "mina",
+    "ivi"
+]
+
+const cosas=[
+   "luces",
+   "escritorio",
+   "pantallas",
+   "laptops"
+]
+
+
+console.log("personas",personas)
+console.log("Cosas",cosas)
+
