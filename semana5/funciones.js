@@ -39,3 +39,22 @@ const sumar3 =(a,b,y)=>{
    return a+b-y
 }
 console.log("resulatdo",sumar3(5,5,2))
+
+
+// funcines flecha cuando solo tiene un paramtero no va an ncesitar parentseris
+
+const saludar =(nombre,apellido)=>{
+   // como imprimir de manera mas elengate
+   //retuen "hola mi nombes es" + nombre + "y mi apallido "+ apellido
+
+   return `hola mi nombre es ${nombre} y mi apellido es ${apellido}`;
+  
+}
+
+console.log(saludar("guillermo","sifuentes"))
+
+// vamos hacer una arrow funcion inline una sola linea de codigo
+// este tipo de funcion inline el retur esta implicito
+ const hello = ()=>"hola grupo 9"
+
+ console.log(hello())
