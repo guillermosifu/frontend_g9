@@ -36,10 +36,10 @@ console.warn("Resultado: ", resultado);
 
 //necesito que el usuario ingrese el tipo de operacion
 
-let valor1 = //prompt("ingresa valor 1");
-let valor2 = // prompt("ingresa valor 2");
+let valor1 = prompt("ingresa valor 1");
+let valor2 =  prompt("ingresa valor 2");
 
-const operacion = //prompt("ingrese su operacion que puede se + - * /");
+const operacion = prompt("ingrese su operacion que puede se + - * /");
 
 let resultadoCalculadora= 0;
 
@@ -91,4 +91,3 @@ if (numeroMultiplo % 3 === 0) {
 const numeroOne = prompt("ingresa un numero1");
 const numeroTwo = prompt("ingresa un numero2");
 
-let mensajeRes = ""
