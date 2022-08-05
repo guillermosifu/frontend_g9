@@ -70,20 +70,25 @@ else if(operacion === "/"){
 }
 
 
-//haremos un algoritmo para poder detectar si un numero es par o impar
-
+/// Haremos un algoritmo para poder detectar si un numero es par o impar
 const numeroMultiplo = 12;
 
-//la forma en la que se puede saber si un numero es es usaso %
-// porque es una operacion que nos da un residuo
+// la forma en la que pueda saber si un numero es par es usando %
+// porque es una operacion que brinda el residuo
 
-//mod = %
-
-if (numeroMultiplo % 2 === 0){
-    console.log("numero par", numeroMultiplo);
-}
-if(numeroMultiplo % 3 === 0){
-    console.log("multiplo de 3", numeroMultiplo)
+// mod = %
+if (numeroMultiplo % 2 === 0) {
+  console.log("Numero par", numeroMultiplo);
 }
 
-console.log()
+if (numeroMultiplo % 3 === 0) {
+  console.log("Numero multiplo de 3", numeroMultiplo);
+}
+
+
+// haremos un algoritmo que pida numeros
+//usando prompt me imprima el numero mayor 
+const numeroOne = prompt("ingresa un numero1");
+const numeroTwo = prompt("ingresa un numero2");
+
+let mensajeRes = ""
