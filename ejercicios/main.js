@@ -1,7 +1,7 @@
 
 function CallMenu(){
     let nro_ejercicio = parseInt(
-        prompt("ingrese el numero de ejercicio que quiere ejecutar: \r\n 1.suma. \r\n 2.Promedio de Examanes \r\n 3. Calcular el area del rectangulo \r\n 4.Calcular el area del triangulo \r\n 5.calcular el area del Circulo \r\n 6. Calcular salario semanal \r\n 7. convertir pulgadas \r\n 8. cambiar a dolares")
+        prompt("ingrese el numero de ejercicio que quiere ejecutar: \r\n 1.suma. \r\n 2.Promedio de Examanes \r\n 3. Calcular el area del rectangulo \r\n 4.Calcular el area del triangulo \r\n 5.calcular el area del Circulo \r\n 6. Calcular salario semanal \r\n 7. convertir pulgadas \r\n 8. cambiar a dolares \r\n 14. calcular focos")
     );
     if (isNaN(nro_ejercicio)){
         alert("porfavor ingresa valores numericos");
@@ -48,7 +48,12 @@ function MenuEjercicios(nro_ejercicio){
         let salario_hora= parseFloat(prompt("ingrese el salario x hora"));
         let horas = parseFloat(prompt("ingrese la horas trabajadas"));
         alert(ej6_CalcularSalario(salario_hora,horas)) 
+          break;
 
+          case 14:
+            let  nro_focos = parseInt (prompt("ingrese el numero de focos:"))
+            alert(ej14_CalcularColorFocos(nro_focos));
+            break;
 
 
     }
@@ -118,5 +123,46 @@ function ej6_CalcularSalario(salario, horas) {
         resultado = "Su salario es :" + salario * horas;
       }
       return resultado;
+    }
+
+    
+  }
+
+  function ej14_CalcularColorFocos(nro_focos) {
+    let focos = [];
+    let verde = 0;
+    let blanco = 0;
+    let rojo = 0;
+    if (isNaN(nro_focos)) {
+      return "Por favor ingrese valores numericos";
+    } else {
+      for (let index = 0; index < nro_focos; index++) {
+        let color = prompt("Ingrese el color del foco : ");
+        focos.push({ color: color });
+      }
+  
+      for (var property in focos) {
+        switch (focos[property].color) {
+          case "verde":
+            verde++;
+            break;
+          case "blanco":
+            blanco++;
+            break;
+          case "rojo":
+            rojo++;
+            break;
+          default:
+            break;
+        }
+      }
+      return (
+        "Color de Focos Verdes : " +
+        verde +
+        " - Rojos : " +
+        rojo +
+        " - Blancos : " +
+        blanco
+      );
     }
   }
