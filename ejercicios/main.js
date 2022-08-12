@@ -31,6 +31,26 @@ function MenuEjercicios(nro_ejercicio){
       let altura_rect =  parseFloat(prompt("ingrese la altura del recatngulo"));
       alert(ej3_CalcularAreaReactangulo(base_rect,altura_rect))
       break;
+
+     case 4 :
+      let base = parseFloat(prompt("ingrese la base del rectangulo"));
+      let altura =parseFloat(prompt("ingrese laaltura"));
+      alert(ej4_CalcularAreaTriangulo(base,altura))
+
+      break;
+
+      case 5 :
+        let radio = parseFloat(prompt("ingrese radio del circulo"));
+        alert(ej5_CalcularRadioCircul(radio))
+        break;
+
+      case 6:
+        let salario_hora= parseFloat(prompt("ingrese el salario x hora"));
+        let horas = parseFloat(prompt("ingrese la horas trabajadas"));
+        alert(ej6_CalcularSalario(salario_hora,horas)) 
+
+
+
     }
 
 }
@@ -64,6 +84,39 @@ function ej3_CalcularAreaReactangulo(base_rect,altura_rect){
 }
 
 
+function ej4_CalcularAreaTriangulo(base,altura){
+    if(isNaN(base) || isNaN(altura) ){
+        return "ingresa valores numericos"
+    } else{
+        return "el area del traiangulo es :" + (base * altura) /2 ;
+    }
 
+}
 
-console.log("%cGRUPO 9","color: red; font-size: 2rem;")
+function ej5_CalcularRadioCirculo(radio){
+    if(isNaN(radio)){
+        return "ingrese el radio"
+    }else{
+        const pi = 3.14
+        return "el area del circulo es :" + pi * (radio * radio)
+    }
+}
+
+function ej6_CalcularSalario(salario, horas) {
+    let resultado = "";
+    let limite = 40;
+    if (isNaN(salario) || isNaN(horas)) {
+      return "Por favor ingrese valores numericos";
+    } else {
+      if (horas > limite) {
+        resultado =
+          "Solo se pagaran " +
+          limite +
+          " horas semanales. Su salario es : " +
+          salario * limite;
+      } else if (horas > 0 && horas <= limite) {
+        resultado = "Su salario es :" + salario * horas;
+      }
+      return resultado;
+    }
+  }
