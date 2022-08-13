@@ -16,19 +16,35 @@ console.log("inputs", inputs)
 const newInputs = Array.from(inputs);
 console.log("newInputs", newInputs)
 
+// Otra forma de acceder a los elementos del DOM es utilizando el ID
+//  * TODO: Recuerden que podemos asignarle un id a cualquier elemento de nuestro HTML
 
 const div = document.getElementById("container")
 
-const nweDiv = Array.from(div)
-console.log("div", div)
+const newDiv = Array.from(div)
+console.log("div", newDiv)
 
 // querySelector y querySelectoAll 
 //los hermanod menos de los demas mtodos
 
 
-const password = document.querySelector("#pass")
+const password = document.querySelectorAll("#pass")
 console.log(password.value)
 
-const input = document.querySelector("input")
-console.log(input)
+
+const inputEmail = document.getElementById("input_email")
+
+inputEmail.style.backgroundColor ="green"
+
+
+// vamos obtener elemento de clases
+
+const inputsName = document.getElementsByClassName("input_name");
+
+console.log(inputsName);
+const newInputsName = Array.from(inputsName);
+newInputsName.forEach((input) => {
+  console.log(input.value);
+});
+
 
