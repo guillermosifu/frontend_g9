@@ -88,7 +88,7 @@ const productos=[
 
 productos.map((productos)=>{
  
-    console.log("productos",productos.name)
+    console.table("productos",productos)
 
 });
 
@@ -123,7 +123,7 @@ const operacionProducto = numerito.map((numerito)=>{
 
 // cual es el valor de operacionProducto 
 // 
-console.log(operacionProducto)
+console.table(operacionProducto)
 
 const productos2=[
     {

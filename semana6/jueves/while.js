@@ -32,7 +32,7 @@ imprimirDiezVeces("hola grupo 9")
 const imprimirDiezVeces1 = (numero) =>{
     let contador = 0;
     while(contador <= 10){
-        console.log(numero * contador);
+        console.table(numero * contador);
         contador++;
     }
 };

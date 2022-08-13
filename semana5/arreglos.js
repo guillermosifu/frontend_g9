@@ -66,6 +66,6 @@ const cosas=[
 ]
 
 
-console.log("personas",personas)
+console.table("personas",personas)
 console.log("Cosas",cosas)
 

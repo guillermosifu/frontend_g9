@@ -25,6 +25,7 @@ const persona={
 
 }
 
+
 const casa={
     escritorio:"rojo",
     cama:"king",
@@ -33,7 +34,7 @@ const casa={
 
 
 // como acceder a cada value de un key
-console.log("carro",carro.motor)
+console.log("carro",carro)
 console.log("persona", persona)
 
 // como insertar nuevo key y value en un objeto
