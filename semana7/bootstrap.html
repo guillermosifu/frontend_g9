@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- BOOSTRAP SE MANEJA POR CLASES es la forma en la que invoacamos los estilos predeterminados -->
+    <h1>Hello, world!</h1>
+    <!-- los colores prederteminados 
+    prymary : azul
+secondary : gris
+danger : rojo
+wraning: amarillo
+info: celeste
+ -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <button class="btn btn-danger">mi primer boton</button>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <button class="btn btn-warning">mi primer boton</button>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <button class="btn btn-primary">mi primer boton</button>
+        </div>
+        <div class="col-md-6 col-sm-4">
+          <button class="btn btn-dark">mi primer boton</button>
+        </div>
+        <div class="col-md-6 col-sm-4">
+          <button class="btn btn-link">mi primer boton</button>
+        </div>
+        <div>
+          <button class="boton">mi primer boton</button>
+        </div>
+      </div>
+
+      <section>
+        <h1>realizar un formulario</h1>
+        <form action="" class="row">
+          <div class="mb-3 col-md-6">
+            <input 
+            type="text" 
+            placeholder="ingresa tu nombre" 
+            class="form-control"/>
+          </div>
+          <div>
+            <input type="text" placeholder="ingresa tu nombre" class="form-control" />
+          </div>
+          <div>
+            <input type="text" placeholder="ingresa tu nombre" />
+          </div>
+          <div>
+            <select  type="text" class="form-select" name="Paises">
+                <option value="Peru">Paises</option>
+                <option value="Peru">Peru</option>
+                <option value="Venezuela">Venezuela</option>
+
+            </select>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
