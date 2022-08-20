@@ -1,0 +1,33 @@
+@import"./variables.scss";
+
+
+
+body{
+    background-color: $color-principal;
+    
+}
+
+
+//mixin en sass
+//son un tipo de funcion la cual nos permte almacaner codigo y reutilizarlo
+
+@mixin alertita($bg:green,$color-text:#fff){
+    background-color:$bg;
+    padding: $padding-1;
+    border-radius: $padding-1;
+    color: $color-text;
+    margin-bottom: $padding-1;
+}
+
+.success{
+    //aca en vez de hacer el estilo una y otra vez solo deberia llamar a el mixin
+    @include alertita;
+}
+
+.warning{
+    @include alertita($bg: blue,$color-text:yellow);
+}
+
+.danger{
+    @include alertita($bg:red);
+}
