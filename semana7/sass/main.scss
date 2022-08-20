@@ -31,3 +31,22 @@ body{
 .danger{
     @include alertita($bg:red);
 }
+
+//ASI COMO LOS MIXIN retornA UNA PORCIO DE CODIGO  tambien me puede retornar una clase directa
+// el proposito de esto es generar codigo completo es dcir dese la creaciun de su clase 
+
+@mixin generate-icons($name,$icon,$color,$size:600px){
+    // de esta forma concatenamos un texto con una variable en sass
+    .div-icon-#{$name}{
+        background: url("./images/#{$icon}");
+        border: solid 4px $color;
+        background-size: cover;
+        width: $size;
+        height: $size;
+    }
+    
+}
+
+@include generate-icons("phone","phone.jpeg",black,300px);
+@include generate-icons("laptop","laptop.png" ,green,400px )
+

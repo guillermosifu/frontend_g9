@@ -24,4 +24,20 @@ body {
   border-radius: 20px;
   color: #fff;
   margin-bottom: 20px;
+}
+
+.div-icon-phone {
+  background: url("./images/phone.jpeg");
+  border: solid 4px black;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.div-icon-laptop {
+  background: url("./images/laptop.png");
+  border: solid 4px green;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
 }/*# sourceMappingURL=main.css.map */
