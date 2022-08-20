@@ -1,0 +1,18 @@
+#option-mode {
+  border-radius: 10px;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+}
+
+body[data-mode=ligth] {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #fff;
+  color: black;
+}
+
+body[data-mode=dark] {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: black;
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=main.css.map */

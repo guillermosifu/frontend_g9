@@ -1,0 +1,30 @@
+
+#option-mode{
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+}
+
+//dark mode
+
+$bg-dark: black;
+$text-dark: rgb(255,255,255);
+
+//light mode
+
+$bg-light:#fff;
+$text-light:black;
+
+@mixin theme ($mode,$color,$bg){
+    body[data-mode="#{$mode}"]{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: $bg;
+        color:$color;
+
+    }
+}
+
+@include theme ("ligth", $text-light,$bg-light);
+@include theme("dark",$text-dark,$bg-dark )
+
