@@ -31,6 +31,7 @@
         <div class="row">
           <div class="col-md-10">
             <input
+            id="github-search"
               type="text"
               class="form-control"
               placeholder="Buscar Usuario"
@@ -39,7 +40,7 @@
 
           <div class="col-md-2">
             <div class="d-grip gap-2">
-              <button class="btn btn-primary">Buscar</button>
+              <button id="github-action-search" class="btn btn-primary">Buscar</button>
             </div>
           </div>
 
@@ -49,6 +50,7 @@
                 <div class="row">
                   <div class="col-md-2">
                     <img
+                    id="img-profile"
                       src="https://pbs.twimg.com/media/EmUM83TXIAAss5k.png"
                       alt="octocat"
                       width="100"
@@ -59,8 +61,8 @@
                   <div class="col-md-10">
                     <div class="row">
                       <div class="col-md-6">
-                        <h4>The octocat</h4>
-                        <p class="text-primary">@octocat</p>
+                        <h4 id="github-name">The octocat</h4>
+                        <p id="github-username" class="text-primary">@octocat</p>
                         <p>This Profile has no Bio</p>
                       </div>
                       <div class="col-md-6 text-end">
@@ -129,5 +131,7 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="./main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
