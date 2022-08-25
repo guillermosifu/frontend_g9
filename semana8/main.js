@@ -29,6 +29,9 @@
 const imageProfile =document.querySelector("#img-profile")
 const githubName = document.querySelector("#github-name")
 const githubUsername = document.querySelector("#github-username")
+const githubBio = document.querySelector("#github-bio")
+const githubRepo = document.querySelector("#github-repos")
+const githubFollowers = document.querySelector("#github-followers")
 
 //input y boton
 const githubActionSearch = document.querySelector("#github-action-search");
@@ -91,7 +94,10 @@ const formatDate = (fecha) =>{
 const setDataUser=(data)=>{
     imageProfile.src = data.avatar_url;
     githubName.innerHTML = data.name;
-    githubUsername.innerHTML=`@${data.login}`
+    githubUsername.innerHTML=`@${data.login}`;
+    githubBio.innerHTML = data.bio;
+    githubRepo.innerHTML= data.public_repos;
+    githubFollowers.innerHTML = data.followers;
 
 
 };
