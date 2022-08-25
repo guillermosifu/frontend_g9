@@ -1,0 +1,14 @@
+
+/* aca podemos implementar mas estilos css */
+
+body{
+    font-family:sans-serif;
+    background-color: rgb(34,50,100);
+}
+section{
+    color: #fff;
+}
+.bg-color{
+    background-color: rgb(60, 53, 53);
+    border-radius: 10px;
+}
