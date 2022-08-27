@@ -10,7 +10,7 @@
     <h1>eventos</h1>
     <!-- es una forma de poder captura o dispara una funcion -->
 <!-- evento onclick -->
-    <button onclick="console.log('hola g9' )">mi primer click</button>
+    <button onclick="imprimir()">mi primer click</button>
     <h1 style="border: solid;" onclick="console.log('hola de nuevo')">segundo click</h1>
     <!-- doclbe click -->
 
@@ -22,7 +22,20 @@
     <p onmouseover="console.log('hola otra vez')">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, dicta.</p>
 
     <!-- onchange -->
-   
+  <div>
+  <h2>CLAULADORA BASICA </h2>
+  <input type="text" placeholder="numero1" id="numero1">
+  <input type="text" placeholder="numero2" id="numero2">
 
+  <button onclick="calculadorHTML('+')">+</button>
+  <button onclick="calculadorHTML('-')">-</button>
+  <button onclick="calculadorHTML('*')">*</button>
+  <button onclick="calculadorHTML('/')">/</button>
+
+  <div id="resultado"></div>
+</div>
+   
+<script src="./eventos.js"></script>
+<script src="./operaciones.js"></script>
 </body>
 </html>
