@@ -51,8 +51,8 @@ if (email !== null && password !== null){
 btnCerrarSesion.onclick = function (){
     //vamos a eliminar las variable del localstorage 
     //local
-    localStorage.removeItem("password");
-    localStorage.removeItem("email");
+    localStorage.clear();
+   
     // mostarr el formulario y ocultarl el mensaje
  form.style.display = "block";
  usuarioSection.style.display= "none";
