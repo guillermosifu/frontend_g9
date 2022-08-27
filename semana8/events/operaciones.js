@@ -1,5 +1,5 @@
 function validarSiEsNumero(numero, tipo) {
-    return isNaN(numero) ? `mensaje Error : no se puedes ${tipo}`: numero
+    return isNaN(numero) ? `mensaje Error : no se puede ${tipo}`: numero;
 }
 
 function sumar (numero1 , numero2){
@@ -21,7 +21,7 @@ function multiplicar(numero1, numero2){
     return validarSiEsNumero(calcMultiplicar, "multiplicar")
 }
 function dividir(numero1, numero2){
-if(+numero2 === o){
+if(+numero2 === 0){
     return "Error no se puede divir entre 0"
 }
     
